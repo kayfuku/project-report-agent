@@ -1,0 +1,166 @@
+[
+  {
+    "timestamp": "2026-10-25T17:59:10.771052",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-001"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-10-25T17:59:12.098069",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "20000 + 2000"
+    },
+    "output": "{'result': 22000}"
+  },
+  {
+    "timestamp": "2026-10-25T17:59:23.976711",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-001"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-10-25T17:59:24.999474",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "20000 + 2000"
+    },
+    "output": "{'result': 22000}"
+  },
+  {
+    "timestamp": "2026-10-25T17:59:45.380061",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-001"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-10-25T17:59:46.112517",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "20000 + 2000"
+    },
+    "output": "{'result': 22000}"
+  },
+  {
+    "timestamp": "2026-10-25T18:00:05.043281",
+    "tool_name": "document_statistics",
+    "input": {},
+    "output": "{'stats': {'total_documents': 5, 'documents_with_amounts': 4, 'total_amount': 466250.0, 'average_amount': 116562.5, 'document_types': {'invoice': 3, 'contract': 1, 'claim': 1}, 'min_amount': 2450.0, 'max_amount': 214500.0}}"
+  },
+  {
+    "timestamp": "2026-10-25T18:00:05.885171",
+    "tool_name": "document_search",
+    "input": {
+      "query": "all invoices totals",
+      "search_type": "type",
+      "doc_type": "invoice",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 3}"
+  },
+  {
+    "timestamp": "2026-10-25T18:00:06.715936",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-002"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-10-25T18:00:06.716765",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-003"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-10-25T18:00:07.496097",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "20000 + 69300 + 214500"
+    },
+    "output": "{'result': 303800}"
+  },
+  {
+    "timestamp": "2026-10-25T18:00:22.957851",
+    "tool_name": "document_search",
+    "input": {
+      "query": "documents with amounts over $50,000",
+      "search_type": "amount",
+      "doc_type": null,
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": "over",
+      "amount": 50000.0
+    },
+    "output": "{'results_count': 3}"
+  },
+  {
+    "timestamp": "2026-10-25T18:01:58.911965",
+    "tool_name": "document_search",
+    "input": {
+      "query": "all contracts",
+      "search_type": "type",
+      "doc_type": "contract",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 1}"
+  },
+  {
+    "timestamp": "2026-10-25T18:01:59.728590",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "CON-001"
+    },
+    "output": "{'found': True, 'doc_type': 'contract'}"
+  },
+  {
+    "timestamp": "2026-10-25T18:02:54.017290",
+    "tool_name": "document_search",
+    "input": {
+      "query": "documents with amounts over $50,000",
+      "search_type": "amount",
+      "doc_type": null,
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": "over",
+      "amount": 50000.0
+    },
+    "output": "{'results_count': 3}"
+  },
+  {
+    "timestamp": "2026-10-25T18:06:22.183542",
+    "tool_name": "document_search",
+    "input": {
+      "query": "all contracts",
+      "search_type": "type",
+      "doc_type": "contract",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 1}"
+  },
+  {
+    "timestamp": "2026-10-25T18:06:23.102697",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "CON-001"
+    },
+    "output": "{'found': True, 'doc_type': 'contract'}"
+  }
+]

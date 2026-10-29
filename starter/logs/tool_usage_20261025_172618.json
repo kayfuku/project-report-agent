@@ -1,0 +1,48 @@
+[
+  {
+    "timestamp": "2026-10-25T17:26:38.730796",
+    "tool_name": "document_search",
+    "input": {
+      "query": "all invoice totals",
+      "search_type": "type",
+      "doc_type": "invoice",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 3}"
+  },
+  {
+    "timestamp": "2026-10-25T17:26:40.136895",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-001"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-10-25T17:26:40.137995",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-002"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-10-25T17:26:40.138911",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-003"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-10-25T17:26:40.956438",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "20000 + 69300 + 214500"
+    },
+    "output": "{'result': 303800}"
+  }
+]

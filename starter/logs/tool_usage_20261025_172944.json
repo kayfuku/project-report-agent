@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2026-10-25T17:30:37.577927",
+    "tool_name": "document_search",
+    "input": {
+      "query": "documents with amounts over $50,000",
+      "search_type": "amount",
+      "doc_type": null,
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": "over",
+      "amount": 50000.0
+    },
+    "output": "{'results_count': 3}"
+  }
+]
